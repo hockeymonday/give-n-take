@@ -2,27 +2,26 @@ import React from "react";
 import { Image, Dimensions, TouchableOpacity, Animated } from "react-native";
 import { Icon, Text, Button } from "react-native-elements";
 import Carousel from "react-native-banner-carousel";
+import img1 from "../assets/11.png";
+import img2 from "../assets/22.png";
+import img3 from "../assets/33.png";
 
 export default class Banner extends React.Component {
   BannerWidth = Dimensions.get("window").width;
-  BannnerHeight = 180;
+  BannnerHeight = 220;
 
-  images = [
-    "https://www.kaaltv.com/apimages/ap9c754833eae142348cefc4f912c8b56f.jpg",
-    "https://news.cornell.edu/sites/default/files/styles/full_size/public/2020-08/0827_peer2.jpg?itok=QEp57ruv",
-    "https://news.cornell.edu/sites/default/files/styles/story_thumbnail_xlarge/public/2020-08/0824_dashboard_0.jpg?itok=wgOWwxts",
-  ];
+  images = [img1, img2, img3];
 
   renderPage(image, index) {
     return (
       <TouchableOpacity onPress={this.props.click}>
         <Image
           style={{
-            width: this.BannerWidth - 35,
+            width: this.BannerWidth - 20,
             height: this.BannnerHeight,
             alignSelf: "center",
           }}
-          source={{ uri: image }}
+          source={image}
           Button
         />
       </TouchableOpacity>

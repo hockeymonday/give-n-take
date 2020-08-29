@@ -1,6 +1,5 @@
 import React from "react";
 import { SearchBar } from "react-native-elements";
-import Emblem from "../assets/logo-cornell.png";
 
 export default class TopBar extends React.Component {
   state = {
@@ -20,7 +19,7 @@ export default class TopBar extends React.Component {
         onChangeText={this.updateSearch}
         value={search}
         containerStyle={{
-          backgroundColor: "#fff",
+          backgroundColor: "#EFEFEF",
           marginLeft: 10,
           marginRight: 10,
           marginBottom: 10,
