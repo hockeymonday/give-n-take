@@ -15,7 +15,7 @@ export default class Banner extends React.Component {
 
   renderPage(image, index) {
     return (
-      <TouchableOpacity onPress={}>
+      <TouchableOpacity onPress={console.log("hi")}>
         <Image
           style={{
             width: this.BannerWidth - 35,
