@@ -13,7 +13,7 @@ export default class Listing extends React.Component {
     data: [
       {
         Item: "Shirt",
-        Price: "Free",
+        Price: "0",
         Image: "https://gd.image-gmkt.com/li/134/590/1129590134.g_520-w_g.jpg",
         Description: "Size large",
         Poster: "uid_1",
@@ -27,17 +27,18 @@ export default class Listing extends React.Component {
         Poster: "uid_2",
       },
       {
-        Item: "Shirt",
-        Price: "Free",
-        Image: "https://gd.image-gmkt.com/li/134/590/1129590134.g_520-w_g.jpg",
+        Item: "Pants",
+        Price: "0",
+        Image:
+          "https://cdn.shopify.com/s/files/1/0838/4441/products/cigarette-pants_black_USPA0258_11320_087_bfba9ef4-a41c-49ae-bec4-f15943546630_grande.jpg?v=1581623204",
         Description: "Size large",
         Poster: "uid_1",
       },
       {
-        Item: "Microphone",
-        Price: 20,
+        Item: "Charger",
+        Price: 10,
         Image:
-          "https://static.bhphoto.com/images/images2500x2500/1574693242_1297189.jpg",
+          "https://i5.walmartimages.com/asr/52a2df80-98ec-4e1b-9cfc-71a68d7575b3_1.4fbf81e4bfa56bc8feffa82b5b15ca83.jpeg",
         Description: "Like new!",
         Poster: "uid_2",
       },
