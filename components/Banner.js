@@ -1,11 +1,11 @@
 import React from "react";
-import { Image, Dimensions, TouchableOpacity } from "react-native";
+import { Image, Dimensions, TouchableOpacity, Animated } from "react-native";
 import { Icon, Text, Button } from "react-native-elements";
 import Carousel from "react-native-banner-carousel";
 
 export default class Banner extends React.Component {
   BannerWidth = Dimensions.get("window").width;
-  BannnerHeight = 250;
+  BannnerHeight = 180;
 
   images = [
     "https://www.kaaltv.com/apimages/ap9c754833eae142348cefc4f912c8b56f.jpg",
@@ -15,15 +15,17 @@ export default class Banner extends React.Component {
 
   renderPage(image, index) {
     return (
-      <Image
-        style={{
-          width: this.BannerWidth - 35,
-          height: this.BannnerHeight,
-          alignSelf: "center",
-        }}
-        source={{ uri: image }}
-        Button
-      />
+      <TouchableOpacity onPress={}>
+        <Image
+          style={{
+            width: this.BannerWidth - 35,
+            height: this.BannnerHeight,
+            alignSelf: "center",
+          }}
+          source={{ uri: image }}
+          Button
+        />
+      </TouchableOpacity>
     );
   }
 
