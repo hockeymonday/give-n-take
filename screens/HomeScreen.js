@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Text } from "react-native-elements";
+import { Text, Button } from "react-native-elements";
 import Constants from "expo-constants";
 import TopBar from "../components/TopBar";
 import SearchBar from "../components/SearchBar";
@@ -15,7 +15,11 @@ export default class App extends React.Component {
         <TopBar></TopBar>
         <SearchBar></SearchBar>
         <View style={{ height: 15 }}></View>
-        <Banner></Banner>
+        <Banner
+          click={() => {
+            this.props.navigation.navigate("Banner");
+          }}
+        ></Banner>
       </View>
     );
   }

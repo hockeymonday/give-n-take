@@ -10,12 +10,12 @@ export default class Banner extends React.Component {
   images = [
     "https://www.kaaltv.com/apimages/ap9c754833eae142348cefc4f912c8b56f.jpg",
     "https://news.cornell.edu/sites/default/files/styles/full_size/public/2020-08/0827_peer2.jpg?itok=QEp57ruv",
-    "https://covid.cornell.edu/_assets/img/meta/coronavirus-highres.jpg",
+    "https://news.cornell.edu/sites/default/files/styles/story_thumbnail_xlarge/public/2020-08/0824_dashboard_0.jpg?itok=wgOWwxts",
   ];
 
   renderPage(image, index) {
     return (
-      <TouchableOpacity onPress={console.log("hi")}>
+      <TouchableOpacity onPress={this.props.click}>
         <Image
           style={{
             width: this.BannerWidth - 35,
